@@ -42,11 +42,11 @@ def iframe():
                     }
                 
                     [data-testid="stSidebarUserContent"] {
-                        background-image: url("https://raw.githubusercontent.com/shiyis/c4pe2022-tbip/master/app/pages/static/ballot-box-with-ballot.251x256%20(1).png");
+                        background-image: url("https://raw.githubusercontent.com/shiyis/c4pe-tbip/master/app/pages/static/ballot-box-with-ballot.251x256%20(1).png");
                         background-size: 15%;
                         background-repeat: no-repeat;
                         padding-bottom: 60px;
-                        background-position: 133px 150px;
+                        background-position: 133px 160px;
                         position: relative;
                         # background-position-x: center;
 
@@ -59,10 +59,6 @@ def iframe():
                     [data-testid="stVerticalBlock"]{
                         margin-top: 1.5rem;
                         display:block;
-                    }
-
-                    [data-node-view-content]{
-                        padding: 0;
                     }
                   
                     .st-bj {
@@ -118,10 +114,10 @@ def display_map(candidates):
     # candidates = pd.read_csv("./data/2022/processed_weball22.csv")    
     latLon = candidates[['Party code','Party affiliation','Affiliated Committee Name','Total receipts','Total disbursements','lat','lon']]
     latLon = [tuple(i[1:]) for i in latLon.itertuples()]
-    # latLon
-    
-    m = folium.Map(location=[38, -96.5], zoom_start=4.5)
-    
+
+    m = folium.Map(location=[38, -96.5], zoom_start=4)
+    mc = MarkerCluster(name='PACs Geolocations').add_to(m)        
+
     colors = ['blue', 'red', 'grey']
     
     # point_layer name list
@@ -177,7 +173,6 @@ def display_map(candidates):
             color=colors[int(code)-1],
             fill_opacity=0.5,line_opacity=0.3).add_to(pg)
         pg.add_to(m)
-            
     folium.LayerControl().add_to(m)
 
     
@@ -193,11 +188,11 @@ def display_map(candidates):
     st.markdown("---")
 
     # display map
-    mc = MarkerCluster(name='PACs Geolocations').add_to(m)  
-    st_map = st_folium(m,height=800, use_container_width=True)
+     
+    st_map = st_folium(m,height=450, use_container_width=True)
     st.markdown("""<style>
                     [title="streamlit_folium.st_folium"] {
-                        height: 900px;
+                        height: 550px;
                     }
                     </style>
                 """,   unsafe_allow_html=True)   
