@@ -1,0 +1,6 @@
+streamlit
+ipywidgets==8.0.2
+folium==0.14.0
+streamlit_folium 
+streamlit-wordcloud
+st_pages
