@@ -37,7 +37,7 @@ def iframe():
                     }
     
                     body {
-                        line-height: 1.5;
+                        line-height: 1.7;
                         letter-spacing: 0em;
                     }
                 
@@ -203,7 +203,7 @@ def display_map(candidates):
 def main():    
     #Load Data
     st.subheader("Presidential Election Candidates Twitter Archive Exploratory Data Analysis", anchor="eda")
-    st.markdown("---")
+    # st.markdown("---")
     df_pac = pd.read_csv('./data/2022/processed_weball.csv')
 
 
@@ -219,7 +219,7 @@ def main():
     display_map(df_pac)
 
     st.subheader("Quantifying Political Subjectivity with Text-based Ideal Points Clustering",anchor="tbip")
-    st.markdown("---")
+    # st.markdown("---")
 
     st.markdown("""
         [TBIP](https://www.aclweb.org/anthology/2020.acl-main.475/) is an unsupervised probabilistic topic model called (Keyon V., Suresh N., David B. et al.) evaluates texts to quantify the political stances of their authors. The model does not require any text labeled with an ideology, nor does it use political parties or votes. The TBIP assesses the latent political viewpoints of text writers and how per-topic word choice varies according to the author's political stance ("ideological topics") given a corpus of political text and the authors of each document. For further details, see the [paper](www.aclweb.org/anthology/2020.acl-main.475/) is the URL.
@@ -355,7 +355,7 @@ def main():
 
 
     st.subheader("Analyze Results",anchor="analysis")
-    st.markdown('---')
+    # st.markdown('---')
 
     st.markdown(""" 
         
