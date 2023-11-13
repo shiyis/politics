@@ -218,7 +218,7 @@ def main():
 
     display_map(df_pac)
 
-    st.subheader("The TBIP Model",anchor="tbip")
+    st.subheader("Quantifying Political Subjectivity with Text-based Ideal Points Clustering",anchor="tbip")
     st.markdown("---")
 
     st.markdown("""
