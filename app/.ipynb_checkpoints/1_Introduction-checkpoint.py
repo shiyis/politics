@@ -12,10 +12,10 @@ os.chdir(p)
 
 
 def toc():
-    st.markdown(" **$\\qquad  \\, \\,\\quad$  [1️⃣ Introduction ](#intro)**")
-    st.markdown(" **$\\qquad  \\,\\, \\quad$  [2️⃣ Data Analysis ](#eda)**", unsafe_allow_html=True)
-    st.markdown(" **$\\qquad  \\,\\, \\quad$  [3️⃣ The TBIP Model ](#tbip)**") 
-    st.markdown(" **$\\qquad  \\,\\, \\quad$  [4️⃣ Final Results ](#analysis)**")
+    st.markdown(" **$\\qquad   \\quad$  [1️⃣ Intro n Roadmap](#intro)**")
+    st.markdown(" **$\\qquad   \\quad$  [2️⃣ Exploratory Analysis ](#eda)**", unsafe_allow_html=True)
+    st.markdown(" **$\\qquad   \\quad$  [3️⃣ Ideal Points model ](#tbip)**") 
+    st.markdown(" **$\\qquad   \\quad$  [4️⃣ Final Results Demo ](#analysis)**")
     
 def upload_file():
     st.markdown("---")
@@ -53,7 +53,7 @@ def iframe():
                     }
 
                     .st-emotion-cache-16txtl3 {
-                        padding: 10.5rem 2rem 0;
+                        padding: 10.3rem 1.8rem 0;
                     }
           
                     [data-testid="stVerticalBlock"]{
@@ -74,7 +74,7 @@ def iframe():
 
 
 
-def display_map(candidates):
+def display_map(pac):
 
     # m = folium.Map(location=[38, -96.5], zoom_start=4, scrollWheelZoom=False, tiles='CartoDB positron')
     states = pd.read_csv('./data/states.csv')
@@ -115,7 +115,7 @@ def display_map(candidates):
     #         location=[pac.iloc[i]['lat'], pac.iloc[i]['lon']],
     #         popup=pac.iloc[i]['committee_name'],
     #     callback=callback).add_to(mc)
-    # candidates = pd.read_csv("./data/2022/processed_weball22.csv")    
+    candidates = pd.read_csv("./data/2022/processed_weball22.csv")    
     latLon = candidates[['Party code','Party affiliation','Affiliated Committee Name','Total receipts','Total disbursements','lat','lon']]
     latLon = [tuple(i[1:]) for i in latLon.itertuples()]
     # latLon
@@ -197,7 +197,7 @@ def display_map(candidates):
     st_map = st_folium(m,height=800, use_container_width=True)
     st.markdown("""<style>
                     [title="streamlit_folium.st_folium"] {
-                        height: 900px;
+                        height: 800px;
                     }
                     </style>
                 """,   unsafe_allow_html=True)   
