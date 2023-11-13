@@ -358,7 +358,7 @@ def main():
 
 
     st.subheader("Analyze Results",anchor="analysis")
-    # st.markdown('---')
+    st.markdown("$$\\quad$$")
 
     st.markdown(""" 
         
