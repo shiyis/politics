@@ -222,7 +222,7 @@ def main():
     display_map(df_pac)
 
     st.subheader("Quantifying Political Subjectivity with Text-based Ideal Points Clustering",anchor="tbip")
-    # st.markdown("---")
+    st.markdown("$$\\qquad$$")
 
     st.markdown("""
         [TBIP](https://www.aclweb.org/anthology/2020.acl-main.475/) is an unsupervised probabilistic topic model called (Keyon V., Suresh N., David B. et al.) evaluates texts to quantify the political stances of their authors. The model does not require any text labeled with an ideology, nor does it use political parties or votes. The TBIP assesses the latent political viewpoints of text writers and how per-topic word choice varies according to the author's political stance ("ideological topics") given a corpus of political text and the authors of each document. For further details, see the [paper](www.aclweb.org/anthology/2020.acl-main.475/) is the URL.
