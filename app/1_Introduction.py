@@ -70,7 +70,7 @@ def iframe():
                         align-items: center;
                     }
             </style>""", unsafe_allow_html=True)
-    components.iframe(src="https://gamma.app/embed/yjmv7s7hjm5zyau", width=None,height=2480, scrolling=False)
+    components.iframe(src="https://gamma.app/embed/yjmv7s7hjm5zyau", width=None,height=2680, scrolling=False)
 
 
 
