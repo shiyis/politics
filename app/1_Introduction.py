@@ -40,7 +40,10 @@ def iframe():
                         line-height: 1.7;
                         letter-spacing: 0em;
                     }
-                
+
+                    p{
+                        margin: 0 0 0;
+                    }
                     [data-testid="stSidebarUserContent"] {
                         background-image: url("https://raw.githubusercontent.com/shiyis/c4pe-tbip/master/app/pages/static/ballot-box-with-ballot.251x256%20(1).png");
                         background-size: 15%;
@@ -49,7 +52,7 @@ def iframe():
                         background-position: 133px 160px;
                         position: relative;
                         # background-position-x: center;
-
+                        line-height:2.7
                     }
 
                     .st-emotion-cache-16txtl3 {
@@ -203,7 +206,7 @@ def display_map(candidates):
 def main():    
     #Load Data
     st.subheader("Presidential Election Candidates Twitter Archive Exploratory Data Analysis", anchor="eda")
-    # st.markdown("---")
+    st.markdown("$$\\quad$$")
     df_pac = pd.read_csv('./data/2022/processed_weball.csv')
 
 
