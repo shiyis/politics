@@ -108,18 +108,11 @@ def display_map(candidates):
 
 
 
-
-    # for i in range(0,len(pac)):
-    #     folium.Marker(
-    #         location=[pac.iloc[i]['lat'], pac.iloc[i]['lon']],
-    #         popup=pac.iloc[i]['committee_name'],
-    #     callback=callback).add_to(mc)
-    # candidates = pd.read_csv("./data/2022/processed_weball22.csv")    
     latLon = candidates[['Party code','Party affiliation','Affiliated Committee Name','Total receipts','Total disbursements','lat','lon']]
     latLon = [tuple(i[1:]) for i in latLon.itertuples()]
 
     m = folium.Map(location=[38, -96.5], zoom_start=4)
-    mc = MarkerCluster(name='PACs Geolocations').add_to(m)        
+    # mc = MarkerCluster(name='PACs Geolocations').add_to(m)        
 
     colors = ['blue', 'red', 'grey']
     
@@ -177,7 +170,7 @@ def display_map(candidates):
             fill_opacity=0.5,line_opacity=0.3).add_to(pg)
         pg.add_to(m)
     folium.LayerControl().add_to(m)
-
+    m.save("../dash_app/data/2022/PAC_Weball.html")
     
     col1, col2 = st.columns([1,1])
 

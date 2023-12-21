@@ -12,10 +12,10 @@ os.chdir(p)
 
 
 def toc():
-    st.markdown(" **$\\qquad   \\quad$  [1️⃣ Intro n Roadmap](#intro)**")
-    st.markdown(" **$\\qquad   \\quad$  [2️⃣ Exploratory Analysis ](#eda)**", unsafe_allow_html=True)
-    st.markdown(" **$\\qquad   \\quad$  [3️⃣ Ideal Points model ](#tbip)**") 
-    st.markdown(" **$\\qquad   \\quad$  [4️⃣ Final Results Demo ](#analysis)**")
+    st.markdown(" **$\\qquad  \\, \\,\\quad$  [1️⃣ Introduction ](#intro)**")
+    st.markdown(" **$\\qquad  \\,\\, \\quad$  [2️⃣ Data Analysis ](#eda)**", unsafe_allow_html=True)
+    st.markdown(" **$\\qquad  \\,\\, \\quad$  [3️⃣ The TBIP Model ](#tbip)**") 
+    st.markdown(" **$\\qquad  \\,\\, \\quad$  [4️⃣ Final Results ](#analysis)**")
     
 def upload_file():
     st.markdown("---")
@@ -37,32 +37,31 @@ def iframe():
                     }
     
                     body {
-                        line-height: 1.5;
+                        line-height: 1.7;
                         letter-spacing: 0em;
                     }
-                
+
+                    p{
+                        margin: 0 0 0;
+                    }
                     [data-testid="stSidebarUserContent"] {
-                        background-image: url("https://raw.githubusercontent.com/shiyis/c4pe2022-tbip/master/app/pages/static/ballot-box-with-ballot.251x256%20(1).png");
+                        background-image: url("https://raw.githubusercontent.com/shiyis/c4pe-tbip/master/app/pages/static/ballot-box-with-ballot.251x256%20(1).png");
                         background-size: 15%;
                         background-repeat: no-repeat;
                         padding-bottom: 60px;
-                        background-position: 133px 150px;
+                        background-position: 133px 160px;
                         position: relative;
                         # background-position-x: center;
-
+                        line-height:2.7
                     }
 
                     .st-emotion-cache-16txtl3 {
-                        padding: 10.3rem 1.8rem 0;
+                        padding: 10.5rem 2rem 0;
                     }
           
                     [data-testid="stVerticalBlock"]{
                         margin-top: 1.5rem;
                         display:block;
-                    }
-
-                    [data-node-view-content]{
-                        padding: 0;
                     }
                   
                     .st-bj {
@@ -70,26 +69,15 @@ def iframe():
                         align-items: center;
                     }
             </style>""", unsafe_allow_html=True)
-    components.iframe(src="https://gamma.app/embed/yjmv7s7hjm5zyau", width=None,height=2480, scrolling=False)
+    components.iframe(src="https://gamma.app/embed/yjmv7s7hjm5zyau", width=None,height=2680, scrolling=False)
 
 
 
-def display_map(pac):
+def display_map(candidates):
 
     # m = folium.Map(location=[38, -96.5], zoom_start=4, scrollWheelZoom=False, tiles='CartoDB positron')
     states = pd.read_csv('./data/states.csv')
-
-    # callback = """\
-    #             function (row) {
-    #                 var icon, marker;
-    #                 icon = L.AwesomeMarkers.icon({
-    #                     icon: "map-marker", markerColor: "blue"
-    #                 });
-    #                 marker = L.marker(new L.LatLng(row[-2], row[-1]));
-    #                 marker.setIcon(icon);
-    #                 return marker;
-    #             };
-    #             """
+    
     
     # choropleth = folium.Choropleth(
     #     geo_data='./data/us-state-boundaries.geojson',
@@ -108,20 +96,13 @@ def display_map(pac):
     # choropleth.geojson.add_to(m)
 
 
-
-
-    # for i in range(0,len(pac)):
-    #     folium.Marker(
-    #         location=[pac.iloc[i]['lat'], pac.iloc[i]['lon']],
-    #         popup=pac.iloc[i]['committee_name'],
-    #     callback=callback).add_to(mc)
-    candidates = pd.read_csv("./data/2022/processed_weball22.csv")    
+    
     latLon = candidates[['Party code','Party affiliation','Affiliated Committee Name','Total receipts','Total disbursements','lat','lon']]
     latLon = [tuple(i[1:]) for i in latLon.itertuples()]
-    # latLon
-    
-    m = folium.Map(location=[38, -96.5], zoom_start=4.5)
-    
+
+    m = folium.Map(location=[38, -96.5], zoom_start=4)
+    mc = MarkerCluster(name='PACs Geolocations').add_to(m)        
+
     colors = ['blue', 'red', 'grey']
     
     # point_layer name list
@@ -177,7 +158,6 @@ def display_map(pac):
             color=colors[int(code)-1],
             fill_opacity=0.5,line_opacity=0.3).add_to(pg)
         pg.add_to(m)
-            
     folium.LayerControl().add_to(m)
 
     
@@ -193,11 +173,11 @@ def display_map(pac):
     st.markdown("---")
 
     # display map
-    mc = MarkerCluster(name='PACs Geolocations').add_to(m)  
-    st_map = st_folium(m,height=800, use_container_width=True)
+     
+    st_map = st_folium(m,height=450, use_container_width=True)
     st.markdown("""<style>
                     [title="streamlit_folium.st_folium"] {
-                        height: 800px;
+                        height: 550px;
                     }
                     </style>
                 """,   unsafe_allow_html=True)   
@@ -208,7 +188,7 @@ def display_map(pac):
 def main():    
     #Load Data
     st.subheader("Presidential Election Candidates Twitter Archive Exploratory Data Analysis", anchor="eda")
-    st.markdown("---")
+    st.markdown("$$\\quad$$")
     df_pac = pd.read_csv('./data/2022/processed_weball.csv')
 
 
@@ -223,8 +203,8 @@ def main():
 
     display_map(df_pac)
 
-    st.subheader("The TBIP Model",anchor="tbip")
-    st.markdown("---")
+    st.subheader("Quantifying Political Subjectivity with Text-based Ideal Points Clustering",anchor="tbip")
+    st.markdown("$$\\qquad$$")
 
     st.markdown("""
         [TBIP](https://www.aclweb.org/anthology/2020.acl-main.475/) is an unsupervised probabilistic topic model called (Keyon V., Suresh N., David B. et al.) evaluates texts to quantify the political stances of their authors. The model does not require any text labeled with an ideology, nor does it use political parties or votes. The TBIP assesses the latent political viewpoints of text writers and how per-topic word choice varies according to the author's political stance ("ideological topics") given a corpus of political text and the authors of each document. For further details, see the [paper](www.aclweb.org/anthology/2020.acl-main.475/) is the URL.
@@ -257,7 +237,7 @@ def main():
         
         $$ \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad q(\\theta_d) = \\text{LogNormal}_K(\\mu_{\\theta_d}\\sigma^2_{\\theta_d})$$
                 
-        $$ \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad q(\\theta_d) = \\text{LogNormal}_V(\\mu_{\\beta_k}, \\sigma^2_{\\beta_k})$$
+        $$ \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad q(\\beta_k) = \\text{LogNormal}_V(\\mu_{\\beta_k}, \\sigma^2_{\\beta_k})$$
                 
         $$ \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad \\qquad q(\\eta_k) = \\mathcal{N}_V(\\mu_{\\eta_k}, \\sigma^2_{\\eta_k})$$
                 
@@ -360,7 +340,7 @@ def main():
 
 
     st.subheader("Analyze Results",anchor="analysis")
-    st.markdown('---')
+    st.markdown("$$\\quad$$")
 
     st.markdown(""" 
         
