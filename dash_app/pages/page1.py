@@ -87,7 +87,7 @@ layout =  html.Div([
                         [dbc.Col(dbc.Row(dbc.Col(children=[dcc.Dropdown(pd.DataFrame(pd.read_csv("./data/states.csv"))['name'].tolist(),id='state-dropdown')],id='states-col'))),
                          dbc.Col(dbc.Row(dbc.Col(children=[dcc.Dropdown(id='names-dropdown')],id='cand-names-col'),id='cand-names-row'))]),
                     # html.P(),
-                    html.Div(html.Div(children=[html.Div(dcc.Slider(7000, 27500000, 2500000,value=2500000,id='pac-exp-filter'),style={'margin':'2rem -1.3rem 0rem -1.3rem'})],id='cand-names-col')),
+                    html.Div(html.Div(children=[html.Div(dcc.Slider(7000, 27500000, 3000000,value=3000000,id='pac-exp-filter'),style={'margin':'2rem -1.3rem 0rem -1.3rem'})],id='cand-names-col')),
                     html.P(),
                     html.Div(id='mapmessage', style={'color' : '#FFFFFF', 'fontSize' : '20px', 'marginTop' : '-25px'}),
                     html.Br(),
@@ -125,18 +125,18 @@ def update_output(slider, state, cand):
                 radius = 50
                 opacity = 0.8
             if r >= 20000000:
-                radius = 30
+                radius = 25
                 opacity = 0.8
             elif r >= 10000000:
-                radius = 17
+                radius = 20
                 opacity = 0.7
 
             elif r >= 5000000:
-                radius = 16
+                radius = 18
                 opacity = 0.6
 
             elif r  >= 4000000:
-                radius = 13
+                radius = 15
                 opacity = 0.5
             elif r >= 3000000:
                 radius = 11
