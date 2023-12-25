@@ -4,3 +4,5 @@ venv
 .envx
 .DS_Store
 cspell.json
+.venv
+.vscode
