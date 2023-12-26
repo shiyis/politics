@@ -21,6 +21,6 @@ Please also check out the [research](https://raw.githubusercontent.com/shiyis/c4
 This project only explores the open tweets and data retrieved from Twitter API for personal non-commercial use only. For a full collection of tweets, please email me at shiys3447@gmail.com
 
 ---
-### Streamlit Demo
+### Dash Demo
 
 Please check out this [link](https://c4fetbip-d76627d583e0.herokuapp.com/) for a final demo.
