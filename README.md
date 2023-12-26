@@ -23,4 +23,4 @@ This project only explores the open tweets and data retrieved from Twitter API f
 ---
 ### Streamlit Demo
 
-Please check out this [link](https://c4pe-tbip.streamlit.app/) for a final demo.
+Please check out this [link]([https://c4pe-tbip.streamlit.app/](https://c4fetbip-d76627d583e0.herokuapp.com/)https://c4fetbip-d76627d583e0.herokuapp.com/) for a final demo.
