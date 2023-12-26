@@ -8,7 +8,7 @@ This [jupyter notebook](https://github.com/shiyis/c4pe2022-tweets/blob/main/cand
 
 ---
 ### Method
-This project will largely follow [this paper](https://github.com/keyonvafa/tbip) for conducting an unsupervised analysis over the tweets' textual content for eliciting potential interpretable results.
+This project will largely follow [this paper](https://github.com/keyonvafa/tbip) for conducting an ad hoc analysis and unsupervised modeling over political content in the format of tweets for eliciting potential interpretable results.
 
 Simple EDA analysis will also be carried out in supporting the final analysis.
 
