@@ -1,3 +1,6 @@
 [submodule "dash-app"]
 	path = dash-app
 	url = https://github.com/shiyis/dash-app.git
+[submodule "docs"]
+	path = docs
+	url = https://github.com/shiyis/politix-docs.git
