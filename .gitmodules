@@ -7,3 +7,6 @@
 [submodule "data"]
 	path = data
 	url = git@github.com:shiyis/project-inputs.git
+[submodule "model"]
+	path = model
+	url = https://github.com/keyonvafa/tbip.git
