@@ -1,0 +1,9 @@
+venv
+*.pyc
+.DS_Store
+.envx
+.DS_Store
+cspell.json
+.venv
+.vscode
+dash-app
