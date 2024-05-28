@@ -25,11 +25,11 @@ layout = html.Div(
     [
         html.Div(
             [
-                html.Img(
-                    src="assets/intro.png",
+                html.Iframe(
+                    src="https://gamma.app/embed/l9741p0k5hh1zlo",
                     style={
-                        "width": "1100px",
-                        "height": "auto",
+                        "width": "1300px",
+                        "height": "2300px",
                         "display": "block",
                         "margin": "0 auto",
                         "border-radius": "5px",
