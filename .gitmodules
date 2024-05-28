@@ -1,4 +1,8 @@
 [submodule "docs"]
 	url = https://github.com/shiyis/politix-docs.git
+	path = docs
 [submodule "demo-app/"]
+	url = https://github.com/shiyis/demo-app.git
+[submodule "demo-app"]
+	path = demo-app
 	url = https://github.com/shiyis/demo-app.git
