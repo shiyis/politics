@@ -3,7 +3,7 @@ More specifically, this is a one dimensional "ideal point" (the author's politic
 
 **Measuring Political Subjectivity with VAE**
 
-Drawing inspiration from one of the research conducted on measuring political subjectivity and quantifying author's political stance through variational inference, this project will largely follow [this paper](https://github.com/keyonvafa/tbip) to conduct an ad hoc analysis and unsupervised modeling over political content in the format of tweets for eliciting potential interpretable results.
+Drawing inspiration from one of the researches conducted on measuring political subjectivity and quantifying author's political stance through variational inference, this project will largely follow [this paper](https://github.com/keyonvafa/tbip) to conduct an ad hoc analysis and unsupervised modeling over political content in the format of tweets for eliciting potential interpretable results.
 
 A simple EDA ([Exploratory Data Analysis](https://medium.com/@lamsampathkumar0/eda-exploratory-data-analysis-project-using-python-de90cbf4e128)) will also be carried out in supporting the final analysis.
 
