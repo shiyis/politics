@@ -1,7 +1,8 @@
 ## POLITIX: A Political Text Ideology Extraction Project
 More specifically, this is a one dimensional "ideal point" (the author's political stance or ideological standpoint) projector that utilizes variational encoding methods to quantify an author's political leaning (the author's political position gets projected onto a one dimensional spectrum that ranges from moderate to progressive)
 
-**Measuring Political Subjectivity with VAE**
+---
+### Measuring Political Subjectivity with VAE
 
 Drawing inspiration from one of the researches conducted on measuring political subjectivity and quantifying author's political stance through variational inference, this project will largely follow [this paper](https://github.com/keyonvafa/tbip) to conduct an ad hoc analysis and unsupervised modeling over political content in the format of tweets for eliciting potential interpretable results.
 
