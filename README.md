@@ -20,7 +20,7 @@ This [repo](https://github.com/shiyis/project-inputs) serves as a sample data co
 
 ---
 ### Literature Review
-Please also check out the [research](https://raw.githubusercontent.com/shiyis/c4fe-tbip/master/references.bib) pertaining to this project.
+Please also check out the [researches](https://raw.githubusercontent.com/shiyis/c4fe-tbip/master/references.bib) pertaining to this project. The file includes articles and resources that introduce the sufficient background in order to better understand this particular project. 
 
 
 ---
