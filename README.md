@@ -1,5 +1,5 @@
 ## POLITIX: A Political Text Ideology Extraction Project
-More specifically, this is a one dimensional "ideal point" (the author's political stance or ideological standpoint) projector that utilizes variational encoding methods to quantify an author's political leaning (the author's political position gets projected onto a one dimensional scale that ranges from moderate to progressive).
+More specifically, this is a one dimensional "ideal point" (the author's political stance or ideological standpoint) projector that utilizes Variational Autoencoding methods to quantify an author's political leaning (the author's political position gets projected onto a one dimensional scale that ranges from moderate to progressive).
 
 ---
 ### Measuring Political Subjectivity with VAE
