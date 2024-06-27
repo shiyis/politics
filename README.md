@@ -31,5 +31,5 @@ Please check out this [link](https://my-dash-app-ilf47zak6q-uc.a.run.app/) for a
 
 ---
 ### Privacy and Ethics Disclaimer
-This project only explores the open tweets and data retrieved from Twitter API for personal non-commercial use only. For a full collection of tweets, please email me at shiyis@brandeis.edu.
+This project only explores the open tweets and data retrieved from Twitter API for personal non-commercial use. For a full collection of tweets, please email me at shiyis@brandeis.edu.
 
