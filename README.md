@@ -10,7 +10,7 @@ A simple EDA ([Exploratory Data Analysis](https://medium.com/@lamsampathkumar0/e
 
 ---
 ### To-dos
-Please check out this [link](https://shiyis.github.io/politix-docs) for updates and supplementary analysis and notes. The blog will explain some important context, background, and attach supporting notes. 
+Please check out this [link](https://shiyis.github.io/politix-docs) for updates and supplementary analysis and notes. The blog will explain some important context and attach supporting notes. 
 The major vocabs will be around understanding PACs, Super PACs, and Electoral College. 
 
 ---
