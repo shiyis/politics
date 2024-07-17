@@ -1,12 +1,12 @@
 ## POLITICS: A Political Opinions, Language, and Ideology Text Interpretation and Classification Solution
-More specifically, this project encompasses a data visualization section that displays contextual information for analysis and a one dimensional "ideal point" (the author's political stance or ideological standpoint) projector that utilizes Variational Autoencoding methods to quantify an author's political leaning (the author's political position gets projected onto a one dimensional scale that ranges from moderate to progressive).
+This project offers a solution that helps measure political subjectivity with Variational Autoencoding methods to quantify an author's political leaning (their political position gets projected onto a one dimensional scale as an ideal point that ranges from moderate to progressive).
 
 ---
 ### Dynamically Measuring Political Opinions and Subjectivity with VAE
 
 Drawing inspiration from one of the studies conducted on measuring political subjectivity and quantifying author's political stance through variational inference, this project will largely follow [this paper](https://github.com/keyonvafa/tbip) to conduct an ad hoc analysis and unsupervised modeling over political content in the format of tweets for eliciting potential interpretable results.
 
-A simple EDA ([Exploratory Data Analysis](https://medium.com/@lamsampathkumar0/eda-exploratory-data-analysis-project-using-python-de90cbf4e128)) will also be carried out in supporting the final analysis.
+A simple EDA (What Is [Exploratory Data Analysis](https://medium.com/@lamsampathkumar0/eda-exploratory-data-analysis-project-using-python-de90cbf4e128)?) will also be carried out in supporting the final analysis.
 
 ---
 ### Data
