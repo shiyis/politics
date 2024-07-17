@@ -22,7 +22,7 @@ Please also check out the [references](https://raw.githubusercontent.com/shiyis/
 ---
 ### Final Project Demo
 
-Please check out this [link](https://my-dash-app-ilf47zak6q-uc.a.run.app/) for a final demo (this app is deployed on GCP; for cloud related content please check out [this](https://github.com/the0xsec/cloud-labs) repo) . Also check out [dev](https://github.com/shiyis/politix/tree/dev) branch for src code and other relevant resources.
+Please check out this [link](https://my-dash-app-ilf47zak6q-uc.a.run.app/) for a final demo. Also check out [dev](https://github.com/shiyis/politix/tree/dev) branch for src code.
 
 ---
 ### Privacy and Ethics Disclaimer
