@@ -1,4 +1,4 @@
-## POLITIC: A Political Opinionns, Language, and Ideology Text Interpretation And Classification Solution
+## POLITIC: A Political Opinions, Language, and Ideology Text Interpretation And Classification Solution
 This project offers a solution that helps measure political subjectivity with Variational Autoencoding methods to quantify an author's political leaning (their political position gets projected onto a one dimensional scale as an ideal point that ranges from moderate to progressive).
 
 ---
