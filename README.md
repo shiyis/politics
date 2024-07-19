@@ -9,7 +9,7 @@ Drawing inspiration from one of the studies conducted on measuring political sub
 A simple EDA (What Is [Exploratory Data Analysis](https://medium.com/@lamsampathkumar0/eda-exploratory-data-analysis-project-using-python-de90cbf4e128)?) will also be carried out in supporting the final analysis.
 
 ---
-### Data Collection and Organizing
+### Data Collection and Organization
 This [repo](https://github.com/shiyis/project-inputs) serves as a sample data collection demo.
 (p.s. due to limited permissions of twitter API access, some of the data collected might not be as ideal).
 
