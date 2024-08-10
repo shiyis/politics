@@ -11,7 +11,7 @@ A simple EDA (What Is [Exploratory Data Analysis](https://medium.com/@lamsampath
 ---
 ### Data Collection and Organization
 This [repo](https://github.com/shiyis/project-inputs) serves as a sample data collection demo.
-(p.s. due to limited permissions of twitter API access, some of the data collected might not be as ideal). The data collection process involves using the Twitter API academic access and building a small tweet retrieving pipeline for the tweets
+(p.s. due to limited permissions of twitter API access, some of the data collected might not be as ideal). The data collection process involves using the Twitter API academic access and building a small tweet retrieving pipeline for the tweets.
 
 
 ---
