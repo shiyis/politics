@@ -9,3 +9,6 @@
 [submodule "documentation"]
 	path = documentation
 	url = https://github.com/shiyis/politics-doc
+[submodule "project-docs"]
+	path = project-docs
+	url = https://github.com/shiyis/politics-docs
