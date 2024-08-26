@@ -2,5 +2,5 @@
 	path = demo-app
 	url = https://github.com/shiyis/demo-app.git
 [submodule "project-docs"]
-	path = project-docs
+	path = politics-docs
 	url = https://github.com/shiyis/politics-docs.git
