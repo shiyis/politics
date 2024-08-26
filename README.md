@@ -24,7 +24,7 @@ Please also check out the [references](https://raw.githubusercontent.com/shiyis/
 
 Please check out this [link](https://my-dash-app-ilf47zak6q-uc.a.run.app/) for a final demo. Also check out [dev](https://github.com/shiyis/politics/tree/dev) branch for src code.
 
-Also check out this link for the supplementary [docs]() for this project.
+Also check out this link for the supplementary [docs](https://shiyis.github.io/politics-docs/) for this project.
 
 ---
 ### Privacy and Ethics Disclaimer
