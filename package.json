@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-marked": "^6.3.0",
-    "hexo-theme-doc": "^1.0.0-rc.1",
-    "is-plain-object": "^5.0.0"
-  }
-}
