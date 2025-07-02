@@ -28,5 +28,5 @@ Also check out this link for supplementary [docs](https://shiyis.github.io/polit
 
 ---
 ### Privacy and Ethics Disclaimer
-This project only explores the open tweets and data retrieved from Twitter API for personal non-commercial use. 
+This project only explores the open tweets and data retrieved from Twitter API for personal non-commercial use. For a full collection of twitters, write me an email at shiyis@brandeis.edu
 
